@@ -14,6 +14,7 @@ const images = [
 ]
 </script>
 
+
 <template>
   <v-carousel
     height="70vh"
