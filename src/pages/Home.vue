@@ -62,12 +62,22 @@ onMounted(() => {
             <div class="container">
                 <h2 style="color: #231f20;">Nossos Serviços</h2>
                 <p>Oferecemos uma ampla gama de serviços especializados para atender suas necessidades.</p>
-
+                
                 <div class="services-grid">
                     <div class="service-card animate-on-scroll" style="animation-delay: 0.1s;">
                         <v-icon class="service-icon" color="primary">mdi-shield-account</v-icon>
                         <h3>Vigilância Armada</h3>
                         <p>Serviços especializados de vigilância armada com profissionais altamente treinados e certificados para garantir máxima segurança.</p>
+                    </div>
+                    <div class="service-card animate-on-scroll" style="animation-delay: 0.7s;">
+                        <v-icon class="service-icon" color="primary">mdi-car-arrow-right</v-icon>
+                        <h3>Escolta Armada</h3>
+                        <p>Proteção e escolta especializada para pessoas e cargas, oferecendo segurança durante deslocamentos e transportes.</p>
+                    </div>
+                    <div class="service-card animate-on-scroll" style="animation-delay: 0.8s;">
+                        <v-icon class="service-icon" color="primary">mdi-account-tie</v-icon>
+                        <h3>Segurança Pessoal</h3>
+                        <p>Serviços de segurança pessoal privada com profissionais especializados em proteção individual e familiar.</p>
                     </div>
                     <div class="service-card animate-on-scroll" style="animation-delay: 0.2s;">
                         <v-icon class="service-icon" color="primary">mdi-shield-outline</v-icon>
@@ -93,16 +103,6 @@ onMounted(() => {
                         <v-icon class="service-icon" color="primary">mdi-clipboard-text</v-icon>
                         <h3>Administrativos</h3>
                         <p>Suporte administrativo especializado para otimizar processos e aumentar a eficiência da sua empresa.</p>
-                    </div>
-                    <div class="service-card animate-on-scroll" style="animation-delay: 0.7s;">
-                        <v-icon class="service-icon" color="primary">mdi-car-arrow-right</v-icon>
-                        <h3>Escolta Armada</h3>
-                        <p>Proteção e escolta especializada para pessoas e cargas, oferecendo segurança durante deslocamentos e transportes.</p>
-                    </div>
-                    <div class="service-card animate-on-scroll" style="animation-delay: 0.8s;">
-                        <v-icon class="service-icon" color="primary">mdi-account-tie</v-icon>
-                        <h3>Segurança Pessoal</h3>
-                        <p>Serviços de segurança pessoal privada com profissionais especializados em proteção individual e familiar.</p>
                     </div>
                 </div>
             </div>
