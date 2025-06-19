@@ -1,10 +1,16 @@
 <script setup lang="ts">
+import camisaLogo from '@/assets/camisa-e-logo.jpg'
+import paredeCinza from '@/assets/parede-cinza.jpg'
+import carro from '@/assets/carro.jpg'
+import paredeLogo from '@/assets/parede-e-logo.jpg'
+import placaLogo from '@/assets/placa-e-logo.jpg'
+
 const images = [
-  '/src/assets/camisa-e-logo.jpg',
-  '/src/assets/parede-cinza.jpg',
-  '/src/assets/carro.jpg',
-  '/src/assets/parede-e-logo.jpg',
-  '/src/assets/placa-e-logo.jpg'
+  camisaLogo,
+  paredeCinza,
+  carro,
+  paredeLogo,
+  placaLogo
 ]
 </script>
 
