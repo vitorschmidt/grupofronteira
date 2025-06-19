@@ -36,9 +36,7 @@ onMounted(() => {
 
             <div class="hero-content">
                 <h1>Bem-vindo ao Grupo Fronteira</h1>
-                <p>Com mais de 10 anos de atuação no mercado, somos especializados em vigilância armada, escolta armada
-                    e segurança pessoal privada. Contamos com ampla experiência na prestação de serviços no setor.
-                </p>
+                <p>Sua segurança é nossa prioridade. Descubra como podemos proteger o que é mais importante para você com nossos serviços especializados em segurança privada, vigilância e proteção pessoal.</p>
             </div>
         </section>
 
@@ -68,11 +66,11 @@ onMounted(() => {
                 <div class="services-grid">
                     <div class="service-card animate-on-scroll" style="animation-delay: 0.1s;">
                         <v-icon class="service-icon" color="primary">mdi-shield-account</v-icon>
-                        <h3>Auxiliar de Vigilância Privada</h3>
-                        <p>Serviços de vigilância especializada com profissionais qualificados para garantir a segurança do seu patrimônio.</p>
+                        <h3>Vigilância Armada</h3>
+                        <p>Serviços especializados de vigilância armada com profissionais altamente treinados e certificados para garantir máxima segurança.</p>
                     </div>
                     <div class="service-card animate-on-scroll" style="animation-delay: 0.2s;">
-                        <v-icon class="service-icon" color="primary">mdi-shield-account</v-icon>
+                        <v-icon class="service-icon" color="primary">mdi-shield-outline</v-icon>
                         <h3>Auxiliar de Vigilância Privada</h3>
                         <p>Serviços de vigilância especializada com profissionais qualificados para garantir a segurança do seu patrimônio.</p>
                     </div>
@@ -95,6 +93,16 @@ onMounted(() => {
                         <v-icon class="service-icon" color="primary">mdi-clipboard-text</v-icon>
                         <h3>Administrativos</h3>
                         <p>Suporte administrativo especializado para otimizar processos e aumentar a eficiência da sua empresa.</p>
+                    </div>
+                    <div class="service-card animate-on-scroll" style="animation-delay: 0.7s;">
+                        <v-icon class="service-icon" color="primary">mdi-car-arrow-right</v-icon>
+                        <h3>Escolta Armada</h3>
+                        <p>Proteção e escolta especializada para pessoas e cargas, oferecendo segurança durante deslocamentos e transportes.</p>
+                    </div>
+                    <div class="service-card animate-on-scroll" style="animation-delay: 0.8s;">
+                        <v-icon class="service-icon" color="primary">mdi-account-tie</v-icon>
+                        <h3>Segurança Pessoal</h3>
+                        <p>Serviços de segurança pessoal privada com profissionais especializados em proteção individual e familiar.</p>
                     </div>
                 </div>
             </div>
@@ -220,6 +228,7 @@ onMounted(() => {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
     margin-top: 3rem;
+    justify-content: space-between;
 }
 
 /* Animações de scroll */
@@ -243,6 +252,7 @@ onMounted(() => {
     text-align: center;
     transition: all 0.3s ease;
     border: 2px solid transparent;
+    cursor: pointer;
 }
 
 .feature-card:hover,
@@ -287,6 +297,7 @@ onMounted(() => {
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
     transition: all 0.3s ease;
+    cursor: pointer;
 }
 
 .contact-item:hover {
@@ -353,6 +364,22 @@ onMounted(() => {
     color: v-bind('colors.secondary');
 }
 
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+/* Posicionar os últimos dois cards especificamente */
+.service-card:nth-child(7) {
+    grid-column: 1;
+}
+
+.service-card:nth-child(8) {
+    grid-column: 3;
+}
+
 /* Responsividade */
 @media (max-width: 768px) {
     .home-page {
@@ -384,6 +411,12 @@ onMounted(() => {
 
     .section {
         padding: 3rem 0;
+    }
+
+    /* Remover posicionamento específico em mobile */
+    .service-card:nth-child(7),
+    .service-card:nth-child(8) {
+        grid-column: auto;
     }
 }
 
