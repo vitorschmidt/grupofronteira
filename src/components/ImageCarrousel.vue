@@ -17,7 +17,7 @@ const images = [
 
 <template>
   <v-carousel
-    height="70vh"
+    height="60vh"
     show-arrows="hover"
     cycle
     hide-delimiter-background
