@@ -17,5 +17,14 @@ export default defineConfig({
         additionalData: `@use "@/styles/settings.scss" as *;`
       }
     }
+  },
+  build: {
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          vendor: ['vue', 'vue-router', 'vuetify']
+        }
+      }
+    }
   }
 })

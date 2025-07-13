@@ -4,7 +4,6 @@ import ImageCarousel from '@/components/ImageCarrousel.vue'
 import { colors } from '@/styles/colors'
 import { onMounted } from 'vue'
 
-// Função para observar elementos e aplicar animações de scroll
 onMounted(() => {
     const observerOptions = {
         threshold: 0.1,
