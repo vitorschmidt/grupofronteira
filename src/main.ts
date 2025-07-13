@@ -13,6 +13,7 @@ import * as directives from 'vuetify/directives'
 import '@mdi/font/css/materialdesignicons.css'
 
 import { colors } from '@/styles/colors'
+import { createMetaManager, defaultConfig } from 'vue-meta'
 
 const vuetify = createVuetify({
   components,
@@ -35,4 +36,8 @@ const vuetify = createVuetify({
   },
 })
 
-createApp(App).use(vuetify).use(router).mount('#app')
+const app = createApp(App)
+app.use(vuetify)
+app.use(router)
+app.use(createMetaManager(defaultConfig, (resolvers) => resolvers))
+app.mount('#app')
